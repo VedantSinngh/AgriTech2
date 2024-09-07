@@ -41,7 +41,7 @@ AgriTech is a web application designed to predict agri-horticultural commodity p
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-### 3. `src/App.jsx`
+### `src/App.jsx`
 
 - **Description**: This is the main application file that sets up routing for the application. It includes lazy loading for various components and conditional rendering of the Navbar and Footer based on the route.
 - **Routes**:
