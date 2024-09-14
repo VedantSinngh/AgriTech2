@@ -1,0 +1,17 @@
+/* Light Theme */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+}
+
+/* Dark Theme */
+.dark-mode {
+    --background-color: #000000;
+    --text-color: #ffffff;
+}
+
+/* Apply Theme */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}

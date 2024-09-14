@@ -1,6 +1,14 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Settings = () => {
+    const { t, i18n } = useTranslation();
+
+    const handleLanguageChange = (event) => {
+        const lang = event.target.value;
+        i18n.changeLanguage(lang);
+    };
+
     return (
         <>
             <main className="container" style={{ marginTop: '75.5px', paddingBottom: '80px' }}>
@@ -12,7 +20,7 @@ const Settings = () => {
                             {/* Profile Picture and Change Button */}
                             <div className="profile-pic-container" style={profilePicContainerStyle}>
                                 <div className="profile-pic" style={profilePicStyle}>
-                                    <img src="path-to-profile-picture.jpg" alt="Profile Picture" style={imgStyle} />
+                                    <img src="/frontend/src/assets/apple-icon.png" alt="Profile Picture" style={imgStyle} />
                                 </div>
                                 <button style={buttonStyle}>Change Picture</button>
                             </div>
@@ -31,20 +39,18 @@ const Settings = () => {
 
                 {/* Personalization Box */}
                 <div className="box personalization" style={boxStyle}>
-                    <label htmlFor="theme">Theme</label>
+                    <label htmlFor="theme">{t('theme')}</label>
                     <select id="theme" style={selectStyle}>
-                        <option value="light">Light mode</option>
-                        <option value="dark">Dark mode</option>
+                        <option value="light">{t('light_mode')}</option>
+                        <option value="dark">{t('dark_mode')}</option>
                     </select>
-                    <label htmlFor="language">Language</label>
-                    <select id="language" style={selectStyle}>
-                        <option value="english">English</option>
-                        <option value="hindi">Hindi</option>
-                        <option value="tamil">Tamil</option>
-                        <option value="french">French</option>
-                        <option value="telugu">Telugu</option>
-
-
+                    <label htmlFor="language">{t('language')}</label>
+                    <select id="language" style={selectStyle} onChange={handleLanguageChange}>
+                        <option value="en">{t('english')}</option>
+                        <option value="hi">{t('hindi')}</option>
+                        <option value="ta">{t('tamil')}</option>
+                        <option value="fr">{t('french')}</option>
+                        <option value="te">{t('telugu')}</option>
                     </select>
                 </div>
             </main>

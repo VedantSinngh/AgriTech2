@@ -1,0 +1,16 @@
+{
+    "profile_management": "Profile Management",
+    "username": "Username",
+    "email": "Email",
+    "update_profile": "Update Profile",
+    "change_picture": "Change Picture",
+    "theme": "Theme",
+    "light_mode": "Light Mode",
+    "dark_mode": "Dark Mode",
+    "language": "Language",
+    "english": "English",
+    "hindi": "Hindi",
+    "tamil": "Tamil",
+    "telugu": "Telugu",
+    "french": "French"
+}

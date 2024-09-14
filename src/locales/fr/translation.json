@@ -1,0 +1,16 @@
+{
+    "profile_management": "Gestion du profil",
+    "username": "Nom d'utilisateur",
+    "email": "Email",
+    "update_profile": "Mettre à jour le profil",
+    "change_picture": "Changer l'image",
+    "theme": "Thème",
+    "light_mode": "Mode clair",
+    "dark_mode": "Mode sombre",
+    "language": "Langue",
+    "english": "Anglais",
+    "hindi": "Hindi",
+    "tamil": "Tamoul",
+    "telugu": "Télougou",
+    "french": "Français"
+}

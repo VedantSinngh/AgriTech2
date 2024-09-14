@@ -2,6 +2,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
+import DarkModeToggle from '../DarkModeToggle'; // Import the DarkModeToggle component
+
 
 const Navbar = () => {
     const navigate = useNavigate();
@@ -23,12 +25,14 @@ const Navbar = () => {
                     <button onClick={() => handleNavigation('/dashboard')} className="text-gray-600 hover:text-black">Dashboard</button>
                     <button onClick={() => handleNavigation('/settings')} className="text-gray-600 hover:text-black">Settings</button>
                 </nav>
+                <DarkModeToggle />
                 <button 
                     onClick={() => handleNavigation('/signup')}
                     className="border px-4 py-2 rounded text-black hover:bg-gray-200"
                 >
                     Sign In
                 </button>
+                
             </div>
         </header>
     );
